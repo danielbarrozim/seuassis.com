@@ -1,0 +1,31 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="55" fill="#F8FAFC" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Main gear icon -->
+  <g transform="translate(30, 30)">
+    <!-- Outer gear teeth -->
+    <path d="M30 5 L35 5 L37 15 L32 15 Z" fill="#0F172A"/>
+    <path d="M30 55 L35 55 L37 45 L32 45 Z" fill="#0F172A"/>
+    <path d="M5 30 L15 32 L15 37 L5 35 Z" fill="#0F172A"/>
+    <path d="M55 30 L45 32 L45 37 L55 35 Z" fill="#0F172A"/>
+    
+    <!-- Diagonal teeth -->
+    <path d="M8.5 8.5 L15.5 15.5 L12 18 L5 11 Z" fill="#0F172A"/>
+    <path d="M51.5 51.5 L44.5 44.5 L48 42 L55 49 Z" fill="#0F172A"/>
+    <path d="M51.5 8.5 L44.5 15.5 L48 18 L55 11 Z" fill="#0F172A"/>
+    <path d="M8.5 51.5 L15.5 44.5 L12 42 L5 49 Z" fill="#0F172A"/>
+    
+    <!-- Center circle -->
+    <circle cx="30" cy="30" r="20" fill="#F8FAFC" stroke="#0F172A" stroke-width="2"/>
+    
+    <!-- Inner gear -->
+    <circle cx="30" cy="30" r="12" fill="#0F172A"/>
+    
+    <!-- Center dot -->
+    <circle cx="30" cy="30" r="4" fill="#F8FAFC"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="60" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#0F172A">PEÇA FÁCIL</text>
+</svg>

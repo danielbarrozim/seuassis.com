@@ -2,7 +2,9 @@ version: '3.8'
 
 services:
   site:
-    image: seuassis/site:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     networks:
       - traefik_public
     environment:

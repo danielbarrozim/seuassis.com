@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   site:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: barrozim/seuassis:1.0
     networks:
       - traefik_public
     environment:

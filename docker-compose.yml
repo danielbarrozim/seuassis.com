@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  site:
+    image: seuassis/site:latest
+    networks:
+      - traefik_public
+    environment:
+      - NODE_ENV=production
+    deploy:
+      mode: replicated
+      replicas: 1
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.site.rule=Host(`www.seuassis.com`)
+        - traefik.http.routers.site.entrypoints=websecure
+        - traefik.http.routers.site.tls.certresolver=le
+        - traefik.http.routers.site.service=site
+        - traefik.http.services.site.loadbalancer.server.port=3000
+        - traefik.docker.network=traefik_public
+
+networks:
+  traefik_public:
+    external: true
